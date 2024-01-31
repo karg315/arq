@@ -1,11 +1,9 @@
-package co.edu.unisabana.clases.example.solid.modelo;
-
+package modelo;
 public class Estudiante {
-
     public String nombre;
-    public String carrera;
+    public ICarrera carrera;
 
-    public Estudiante(String nombre, String carrera) {
+    public Estudiante(String nombre, ICarrera carrera) {
         this.nombre = nombre;
         this.carrera = carrera;
     }

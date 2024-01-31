@@ -1,7 +1,7 @@
-package solid.main;
+package main;
 
-import co.edu.unisabana.clases.example.solid.modelo.Estudiante;
-import co.edu.unisabana.clases.example.solid.service.EnvioMaterial;
+import modelo.Estudiante;
+import service.EnvioMaterial;
 
 public class Main {
     public static void main(String[] args) {
@@ -24,7 +24,7 @@ public class Main {
                 System.out.println("Negocios, Administracion I, Historia de la Administracion");
             }
             if (estudiante.carrera.equals("Industrial")) {
-                System.out.println("Procesos, Analitica de datos, Gestion de Calidad ");
+                System.out.println("Procesos, Analitica de datos, Gestion de Calidad");
             }
         }
     }

@@ -1,4 +1,4 @@
-package co.edu.unisabana.clases.example.solid.modelo;
+package modelo;
 
 import java.util.List;
 

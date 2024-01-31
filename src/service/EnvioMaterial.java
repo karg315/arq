@@ -1,7 +1,7 @@
-package co.edu.unisabana.clases.example.solid.service;
+package service;
 
-import co.edu.unisabana.clases.example.solid.modelo.Envio;
-import co.edu.unisabana.clases.example.solid.modelo.Estudiante;
+import modelo.Envio;
+import modelo.Estudiante;
 import java.util.ArrayList;
 
 public class EnvioMaterial {
