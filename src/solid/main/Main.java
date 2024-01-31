@@ -1,4 +1,4 @@
-package co.edu.unisabana.clases.example.solid.main;
+package solid.main;
 
 import co.edu.unisabana.clases.example.solid.modelo.Estudiante;
 import co.edu.unisabana.clases.example.solid.service.EnvioMaterial;
