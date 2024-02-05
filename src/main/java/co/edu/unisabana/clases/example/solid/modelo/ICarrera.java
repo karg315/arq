@@ -1,9 +1,11 @@
-package modelo;
+package co.edu.unisabana.clases.example.solid.modelo;
 
 import java.util.List;
 
 public interface ICarrera {
-    List<String> getMateriales();
-    String getSaludoDirector();
-    String getMaterias();
+
+    List<String> obtenerMateriales();
+    String obtenerMensajeDirector();
+    String obtenerMaterias();
+
 }

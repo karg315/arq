@@ -1,26 +1,22 @@
-package service;
+package co.edu.unisabana.clases.example.solid.service;
 
-import modelo.Envio;
-import modelo.Estudiante;
-import java.util.ArrayList;
+import co.edu.unisabana.clases.example.solid.modelo.*;
+
+import java.util.List;
 
 public class EnvioMaterial {
+  IEmail email;
+  public EnvioMaterial(IEmail email) {
+    this.email = email;
+  }
 
   public void enviarMaterialEstudiante(Estudiante estudiante) {
-    if (estudiante.carrera.equals("Informatica")) {
-      Envio envio = new Envio();
-      envio.material = new ArrayList<>();
-      envio.material.add("Computador");
-      envio.material.add("Mouse");
-      envio.saludoDirector = "Jenny envia saludos";
-      EmailOutlook email = new EmailOutlook();
-      email.enviarEmail(envio);
-    }
-    if (estudiante.carrera.equals("Administracion")) {
-      //lo mismo de arriba pero con otra informacion
-    }
-    if (estudiante.carrera.equals("Industrial")) {
-      //
-    }
+
+    List<String> materiales = estudiante.carrera.obtenerMateriales();
+    String saludoDirector = estudiante.carrera.obtenerMensajeDirector();
+
+    Envio envio = new Envio(materiales, saludoDirector);
+    email.enviarEmail(envio);
+
   }
 }

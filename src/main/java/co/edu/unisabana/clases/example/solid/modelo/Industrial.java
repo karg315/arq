@@ -1,21 +1,21 @@
-package modelo;
+package co.edu.unisabana.clases.example.solid.modelo;
 
 import java.util.Arrays;
 import java.util.List;
 
-public class Industrial implements ICarrera {
+public class Industrial implements ICarrera{
     @Override
-    public List<String> getMateriales() {
-        return Arrays.asList("Computador", "Graficadora", "Mouse");
+    public List<String> obtenerMateriales() {
+        return Arrays.asList("Computador", "Mouse", "Calculadora");
     }
 
     @Override
-    public String getSaludoDirector() {
-        return "Liliam envia saludos";
+    public String obtenerMensajeDirector() {
+        return "Raul envia saludos";
     }
 
     @Override
-    public String getMaterias() {
-        return "Procesos, Analitica de datos, Gestion de Calidad";
+    public String obtenerMaterias() {
+        return "Procesos, Analitica de Datos, Gestion de Calidad";
     }
 }

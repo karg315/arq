@@ -1,13 +1,17 @@
-package modelo;
+package co.edu.unisabana.clases.example.solid.modelo;
 
 import java.util.List;
 
 public class Envio {
 
-  public List<String> material;
-  public String saludoDirector;
+  List<String> material;
+  String saludoDirector;
 
-  @Override
+  public Envio(List<String> material, String saludoDirector) {
+    this.material = material;
+    this.saludoDirector = saludoDirector;
+  }
+
   public String toString() {
     return "Envio{" +
         "material=" + material +
